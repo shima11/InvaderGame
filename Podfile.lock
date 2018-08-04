@@ -1,0 +1,16 @@
+PODS:
+  - Canvas (0.1.2)
+  - EAIntroView (2.6.4)
+  - FlatUIKit (1.5)
+
+DEPENDENCIES:
+  - Canvas
+  - EAIntroView (~> 2.6.0)
+  - FlatUIKit
+
+SPEC CHECKSUMS:
+  Canvas: ae2faca05a15c4d6659fb3ae5e2a14817df4449a
+  EAIntroView: 8f66dc6b79f2d52db26af8fc5476a05ffc549d4c
+  FlatUIKit: 5452fa3fca41e6f04014cca6e81b4c2f961f623c
+
+COCOAPODS: 0.33.1

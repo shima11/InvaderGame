@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD252F901E5B456C8EB7ECD5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A81F4F47C4654CB5825F1416 /* libPods.a */; };
+		D410519519FA6A9E00DBD674 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D410519419FA6A9E00DBD674 /* main.m */; };
+		D410519819FA6A9E00DBD674 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D410519719FA6A9E00DBD674 /* AppDelegate.m */; };
+		D410519B19FA6A9E00DBD674 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D410519A19FA6A9E00DBD674 /* ViewController.m */; };
+		D410519E19FA6A9E00DBD674 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D410519C19FA6A9E00DBD674 /* Main.storyboard */; };
+		D41051A019FA6A9E00DBD674 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D410519F19FA6A9E00DBD674 /* Images.xcassets */; };
+		D41051A319FA6A9E00DBD674 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D41051A119FA6A9E00DBD674 /* LaunchScreen.xib */; };
+		D41051AF19FA6A9E00DBD674 /* InvaderGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D41051AE19FA6A9E00DBD674 /* InvaderGameTests.m */; };
+		D41051BD19FA6B5000DBD674 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D41051BC19FA6B5000DBD674 /* GameScene.m */; };
+		D41051BF19FCCC8100DBD674 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = D41051BE19FCCC8100DBD674 /* back.png */; };
+		D41051C119FCD3FB00DBD674 /* backButton1.png in Resources */ = {isa = PBXBuildFile; fileRef = D41051C019FCD3FB00DBD674 /* backButton1.png */; };
+		D41051C319FCD63C00DBD674 /* backButton2.png in Resources */ = {isa = PBXBuildFile; fileRef = D41051C219FCD63C00DBD674 /* backButton2.png */; };
+		D41051C519FCFD3100DBD674 /* backButton3.png in Resources */ = {isa = PBXBuildFile; fileRef = D41051C419FCFD3100DBD674 /* backButton3.png */; };
+		D41051C919FD499600DBD674 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = D41051C819FD499600DBD674 /* ball.png */; };
+		D41051D019FDC1DE00DBD674 /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = D41051CE19FDC1DE00DBD674 /* MyParticle.sks */; };
+		D41051D119FDC1DE00DBD674 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = D41051CF19FDC1DE00DBD674 /* spark.png */; };
+		D437E0801A0A4EC7002BD4C7 /* invader2.png in Resources */ = {isa = PBXBuildFile; fileRef = D437E07E1A0A4EC7002BD4C7 /* invader2.png */; };
+		D437E0811A0A4EC7002BD4C7 /* invader1.png in Resources */ = {isa = PBXBuildFile; fileRef = D437E07F1A0A4EC7002BD4C7 /* invader1.png */; };
+		D437E0841A0A900A002BD4C7 /* TitleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D437E0831A0A900A002BD4C7 /* TitleScene.m */; };
+		D437E0861A0A911B002BD4C7 /* backImage.png in Resources */ = {isa = PBXBuildFile; fileRef = D437E0851A0A911B002BD4C7 /* backImage.png */; };
+		D437E08A1A0A9213002BD4C7 /* restartButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D437E0871A0A9213002BD4C7 /* restartButton.png */; };
+		D437E08B1A0A9213002BD4C7 /* playButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D437E0881A0A9213002BD4C7 /* playButton.png */; };
+		D437E08C1A0A9213002BD4C7 /* settingButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D437E0891A0A9213002BD4C7 /* settingButton.png */; };
+		D437E08E1A0A923B002BD4C7 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = D437E08D1A0A923B002BD4C7 /* title.png */; };
+		D47C31801A0D5F8F00025784 /* playButton2.png in Resources */ = {isa = PBXBuildFile; fileRef = D47C317E1A0D5F8F00025784 /* playButton2.png */; };
+		D47C31811A0D5F8F00025784 /* stopButton2.png in Resources */ = {isa = PBXBuildFile; fileRef = D47C317F1A0D5F8F00025784 /* stopButton2.png */; };
+		D47C318C1A0E811F00025784 /* attackButton2.png in Resources */ = {isa = PBXBuildFile; fileRef = D47C31881A0E811F00025784 /* attackButton2.png */; };
+		D47C318D1A0E811F00025784 /* rightButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D47C31891A0E811F00025784 /* rightButton.png */; };
+		D47C318E1A0E811F00025784 /* attackButton1.png in Resources */ = {isa = PBXBuildFile; fileRef = D47C318A1A0E811F00025784 /* attackButton1.png */; };
+		D47C318F1A0E811F00025784 /* leftButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D47C318B1A0E811F00025784 /* leftButton.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D41051A919FA6A9E00DBD674 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D410518719FA6A9E00DBD674 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D410518E19FA6A9E00DBD674;
+			remoteInfo = InvaderGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6D46A375FB87487895ADA04E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		A81F4F47C4654CB5825F1416 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D410518F19FA6A9E00DBD674 /* InvaderGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvaderGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D410519319FA6A9E00DBD674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D410519419FA6A9E00DBD674 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D410519619FA6A9E00DBD674 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D410519719FA6A9E00DBD674 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D410519919FA6A9E00DBD674 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D410519A19FA6A9E00DBD674 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D410519D19FA6A9E00DBD674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D410519F19FA6A9E00DBD674 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D41051A219FA6A9E00DBD674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D41051A819FA6A9E00DBD674 /* InvaderGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvaderGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D41051AD19FA6A9E00DBD674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D41051AE19FA6A9E00DBD674 /* InvaderGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InvaderGameTests.m; sourceTree = "<group>"; };
+		D41051BB19FA6B5000DBD674 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		D41051BC19FA6B5000DBD674 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		D41051BE19FCCC8100DBD674 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		D41051C019FCD3FB00DBD674 /* backButton1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backButton1.png; sourceTree = "<group>"; };
+		D41051C219FCD63C00DBD674 /* backButton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backButton2.png; sourceTree = "<group>"; };
+		D41051C419FCFD3100DBD674 /* backButton3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backButton3.png; sourceTree = "<group>"; };
+		D41051C819FD499600DBD674 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
+		D41051CE19FDC1DE00DBD674 /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
+		D41051CF19FDC1DE00DBD674 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		D437E07E1A0A4EC7002BD4C7 /* invader2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = invader2.png; sourceTree = "<group>"; };
+		D437E07F1A0A4EC7002BD4C7 /* invader1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = invader1.png; sourceTree = "<group>"; };
+		D437E0821A0A900A002BD4C7 /* TitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleScene.h; sourceTree = "<group>"; };
+		D437E0831A0A900A002BD4C7 /* TitleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleScene.m; sourceTree = "<group>"; };
+		D437E0851A0A911B002BD4C7 /* backImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backImage.png; sourceTree = "<group>"; };
+		D437E0871A0A9213002BD4C7 /* restartButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = restartButton.png; sourceTree = "<group>"; };
+		D437E0881A0A9213002BD4C7 /* playButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playButton.png; sourceTree = "<group>"; };
+		D437E0891A0A9213002BD4C7 /* settingButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settingButton.png; sourceTree = "<group>"; };
+		D437E08D1A0A923B002BD4C7 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
+		D47C317E1A0D5F8F00025784 /* playButton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playButton2.png; sourceTree = "<group>"; };
+		D47C317F1A0D5F8F00025784 /* stopButton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopButton2.png; sourceTree = "<group>"; };
+		D47C31881A0E811F00025784 /* attackButton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = attackButton2.png; sourceTree = "<group>"; };
+		D47C31891A0E811F00025784 /* rightButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightButton.png; sourceTree = "<group>"; };
+		D47C318A1A0E811F00025784 /* attackButton1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = attackButton1.png; sourceTree = "<group>"; };
+		D47C318B1A0E811F00025784 /* leftButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftButton.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D410518C19FA6A9E00DBD674 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD252F901E5B456C8EB7ECD5 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D41051A519FA6A9E00DBD674 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E83B3E718C94270BA9BDF36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A81F4F47C4654CB5825F1416 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D410518619FA6A9E00DBD674 = {
+			isa = PBXGroup;
+			children = (
+				D410519119FA6A9E00DBD674 /* InvaderGame */,
+				D41051AB19FA6A9E00DBD674 /* InvaderGameTests */,
+				D410519019FA6A9E00DBD674 /* Products */,
+				6D46A375FB87487895ADA04E /* Pods.xcconfig */,
+				7E83B3E718C94270BA9BDF36 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D410519019FA6A9E00DBD674 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D410518F19FA6A9E00DBD674 /* InvaderGame.app */,
+				D41051A819FA6A9E00DBD674 /* InvaderGameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D410519119FA6A9E00DBD674 /* InvaderGame */ = {
+			isa = PBXGroup;
+			children = (
+				D410519619FA6A9E00DBD674 /* AppDelegate.h */,
+				D410519719FA6A9E00DBD674 /* AppDelegate.m */,
+				D410519919FA6A9E00DBD674 /* ViewController.h */,
+				D410519A19FA6A9E00DBD674 /* ViewController.m */,
+				D437E0821A0A900A002BD4C7 /* TitleScene.h */,
+				D437E0831A0A900A002BD4C7 /* TitleScene.m */,
+				D41051BB19FA6B5000DBD674 /* GameScene.h */,
+				D41051BC19FA6B5000DBD674 /* GameScene.m */,
+				D41051CE19FDC1DE00DBD674 /* MyParticle.sks */,
+				D41051CF19FDC1DE00DBD674 /* spark.png */,
+				D410519C19FA6A9E00DBD674 /* Main.storyboard */,
+				D410519F19FA6A9E00DBD674 /* Images.xcassets */,
+				D41051A119FA6A9E00DBD674 /* LaunchScreen.xib */,
+				D410519219FA6A9E00DBD674 /* Supporting Files */,
+			);
+			path = InvaderGame;
+			sourceTree = "<group>";
+		};
+		D410519219FA6A9E00DBD674 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D410519319FA6A9E00DBD674 /* Info.plist */,
+				D410519419FA6A9E00DBD674 /* main.m */,
+				D47C31881A0E811F00025784 /* attackButton2.png */,
+				D47C31891A0E811F00025784 /* rightButton.png */,
+				D47C318A1A0E811F00025784 /* attackButton1.png */,
+				D47C318B1A0E811F00025784 /* leftButton.png */,
+				D47C317E1A0D5F8F00025784 /* playButton2.png */,
+				D47C317F1A0D5F8F00025784 /* stopButton2.png */,
+				D437E0871A0A9213002BD4C7 /* restartButton.png */,
+				D437E0881A0A9213002BD4C7 /* playButton.png */,
+				D437E0891A0A9213002BD4C7 /* settingButton.png */,
+				D437E08D1A0A923B002BD4C7 /* title.png */,
+				D437E0851A0A911B002BD4C7 /* backImage.png */,
+				D437E07E1A0A4EC7002BD4C7 /* invader2.png */,
+				D437E07F1A0A4EC7002BD4C7 /* invader1.png */,
+				D41051C819FD499600DBD674 /* ball.png */,
+				D41051BE19FCCC8100DBD674 /* back.png */,
+				D41051C019FCD3FB00DBD674 /* backButton1.png */,
+				D41051C219FCD63C00DBD674 /* backButton2.png */,
+				D41051C419FCFD3100DBD674 /* backButton3.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D41051AB19FA6A9E00DBD674 /* InvaderGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				D41051AE19FA6A9E00DBD674 /* InvaderGameTests.m */,
+				D41051AC19FA6A9E00DBD674 /* Supporting Files */,
+			);
+			path = InvaderGameTests;
+			sourceTree = "<group>";
+		};
+		D41051AC19FA6A9E00DBD674 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D41051AD19FA6A9E00DBD674 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D410518E19FA6A9E00DBD674 /* InvaderGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D41051B219FA6A9E00DBD674 /* Build configuration list for PBXNativeTarget "InvaderGame" */;
+			buildPhases = (
+				764425C93FCA4E7D9FFBE22D /* Check Pods Manifest.lock */,
+				D410518B19FA6A9E00DBD674 /* Sources */,
+				D410518C19FA6A9E00DBD674 /* Frameworks */,
+				D410518D19FA6A9E00DBD674 /* Resources */,
+				25DB3513C444424F9C5FB577 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InvaderGame;
+			productName = InvaderGame;
+			productReference = D410518F19FA6A9E00DBD674 /* InvaderGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D41051A719FA6A9E00DBD674 /* InvaderGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D41051B519FA6A9E00DBD674 /* Build configuration list for PBXNativeTarget "InvaderGameTests" */;
+			buildPhases = (
+				D41051A419FA6A9E00DBD674 /* Sources */,
+				D41051A519FA6A9E00DBD674 /* Frameworks */,
+				D41051A619FA6A9E00DBD674 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D41051AA19FA6A9E00DBD674 /* PBXTargetDependency */,
+			);
+			name = InvaderGameTests;
+			productName = InvaderGameTests;
+			productReference = D41051A819FA6A9E00DBD674 /* InvaderGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D410518719FA6A9E00DBD674 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Jinsei Shima";
+				TargetAttributes = {
+					D410518E19FA6A9E00DBD674 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					D41051A719FA6A9E00DBD674 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = D410518E19FA6A9E00DBD674;
+					};
+				};
+			};
+			buildConfigurationList = D410518A19FA6A9E00DBD674 /* Build configuration list for PBXProject "InvaderGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D410518619FA6A9E00DBD674;
+			productRefGroup = D410519019FA6A9E00DBD674 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D410518E19FA6A9E00DBD674 /* InvaderGame */,
+				D41051A719FA6A9E00DBD674 /* InvaderGameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D410518D19FA6A9E00DBD674 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D47C31801A0D5F8F00025784 /* playButton2.png in Resources */,
+				D47C318D1A0E811F00025784 /* rightButton.png in Resources */,
+				D41051BF19FCCC8100DBD674 /* back.png in Resources */,
+				D437E08E1A0A923B002BD4C7 /* title.png in Resources */,
+				D437E0811A0A4EC7002BD4C7 /* invader1.png in Resources */,
+				D41051C319FCD63C00DBD674 /* backButton2.png in Resources */,
+				D437E08A1A0A9213002BD4C7 /* restartButton.png in Resources */,
+				D410519E19FA6A9E00DBD674 /* Main.storyboard in Resources */,
+				D437E0861A0A911B002BD4C7 /* backImage.png in Resources */,
+				D41051C119FCD3FB00DBD674 /* backButton1.png in Resources */,
+				D41051D019FDC1DE00DBD674 /* MyParticle.sks in Resources */,
+				D47C318C1A0E811F00025784 /* attackButton2.png in Resources */,
+				D437E0801A0A4EC7002BD4C7 /* invader2.png in Resources */,
+				D41051D119FDC1DE00DBD674 /* spark.png in Resources */,
+				D41051A319FA6A9E00DBD674 /* LaunchScreen.xib in Resources */,
+				D47C318E1A0E811F00025784 /* attackButton1.png in Resources */,
+				D41051C519FCFD3100DBD674 /* backButton3.png in Resources */,
+				D41051C919FD499600DBD674 /* ball.png in Resources */,
+				D437E08B1A0A9213002BD4C7 /* playButton.png in Resources */,
+				D437E08C1A0A9213002BD4C7 /* settingButton.png in Resources */,
+				D47C318F1A0E811F00025784 /* leftButton.png in Resources */,
+				D41051A019FA6A9E00DBD674 /* Images.xcassets in Resources */,
+				D47C31811A0D5F8F00025784 /* stopButton2.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D41051A619FA6A9E00DBD674 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25DB3513C444424F9C5FB577 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		764425C93FCA4E7D9FFBE22D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D410518B19FA6A9E00DBD674 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D410519B19FA6A9E00DBD674 /* ViewController.m in Sources */,
+				D41051BD19FA6B5000DBD674 /* GameScene.m in Sources */,
+				D437E0841A0A900A002BD4C7 /* TitleScene.m in Sources */,
+				D410519819FA6A9E00DBD674 /* AppDelegate.m in Sources */,
+				D410519519FA6A9E00DBD674 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D41051A419FA6A9E00DBD674 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D41051AF19FA6A9E00DBD674 /* InvaderGameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D41051AA19FA6A9E00DBD674 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D410518E19FA6A9E00DBD674 /* InvaderGame */;
+			targetProxy = D41051A919FA6A9E00DBD674 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D410519C19FA6A9E00DBD674 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D410519D19FA6A9E00DBD674 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D41051A119FA6A9E00DBD674 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D41051A219FA6A9E00DBD674 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D41051B019FA6A9E00DBD674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D41051B119FA6A9E00DBD674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D41051B319FA6A9E00DBD674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D46A375FB87487895ADA04E /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = InvaderGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D41051B419FA6A9E00DBD674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D46A375FB87487895ADA04E /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = InvaderGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D41051B619FA6A9E00DBD674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = InvaderGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InvaderGame.app/InvaderGame";
+			};
+			name = Debug;
+		};
+		D41051B719FA6A9E00DBD674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = InvaderGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InvaderGame.app/InvaderGame";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D410518A19FA6A9E00DBD674 /* Build configuration list for PBXProject "InvaderGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D41051B019FA6A9E00DBD674 /* Debug */,
+				D41051B119FA6A9E00DBD674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D41051B219FA6A9E00DBD674 /* Build configuration list for PBXNativeTarget "InvaderGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D41051B319FA6A9E00DBD674 /* Debug */,
+				D41051B419FA6A9E00DBD674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D41051B519FA6A9E00DBD674 /* Build configuration list for PBXNativeTarget "InvaderGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D41051B619FA6A9E00DBD674 /* Debug */,
+				D41051B719FA6A9E00DBD674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D410518719FA6A9E00DBD674 /* Project object */;
+}
